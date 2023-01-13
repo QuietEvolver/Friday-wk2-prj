@@ -56,9 +56,9 @@ const handleSuggestor = (e) => {
 
 
   
-//  output = setTimeout(() => {
-//     output.remove() 
-//   }, timeout);
+ output = setTimeout(() => {
+    output.remove(); 
+  }, 2000);
 }
 
 window.addEventListener("load", () => {
