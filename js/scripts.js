@@ -6,20 +6,39 @@
 -When the user submits the form again (for a second or third time) previous results are hidden, cleared, or replaced.
 */
 
+function questions(){
+
+  if (e){
+   // isolate list items through val
+   const liItem1 = list.innerHTML += `<li><a href="#">Item ${list.children.length + 1}</a></li>`;
+   console.log("li item/e", liItem, e);
+  }
+}
+
+function errorMessage(){
+  return  "Enter #s/make selections."
+ }
+
 const handleSuggestor = (event) => {
   event.preventDefault();
-
-  const question1Val = document.getElementById("question-1").value;
-  console.log("question1Val ", question1Val):
+  
+  // data capture
+  const questionVal = document.getElementById("answer-selections").value;
+  console.log("question1Val: ", questionVal);
   const list = document.getElementById("list");
+  console.log("my list: ", list);
 
-  const liItem = list.innerHTML += `<li><a href="#">Item ${list.children.length + 1}</a></li>`;
-
+  //add ITEM to disply list item in order
+  // const liItem = list.innerHTML += `<li><a href="#">Item ${list.children.length + 1}</a></li>`;
+  const liItem = list.innerHTML += `<li><a href="#">Question for you ${list.children.length}</a></li>`;
   console.log("li item", liItem);
 
-  if (Number.isInteger(question1) || Number.isInteger(question2)|| Number.isInteger(question3)|| Number.isInteger(question4)|| Number.isInteger(question5)){
-    document.getElementById("result").innerText = nums;
-  } else {
+  // error handling
+  // const nums = "Display numbers: YES";
+  // if ((Number.isInteger(question1) || Number.isInteger(question2)|| Number.isInteger(question3)|| Number.isInteger(question4)|| Number.isInteger(question5))){
+  //   document.getElementById("result").innerText = nums;
+  // } else 
+  if (questionVal === 0) {
     document.getElementById("result").innerText = errorMessage();
   }
 }
