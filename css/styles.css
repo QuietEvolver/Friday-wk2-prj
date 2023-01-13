@@ -10,7 +10,22 @@ h1 {
 h2{
   color: rgb(96, 92, 100);
 }
-#output {
+
+.box {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+  padding: 2px 4px;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+.log {
+  margin-top: 8px;
+  font-family: monospace;
+}
+
+#result {
   color: rgb(115, 197, 205);
   font-weight: bold;
   font-size: x-large;
