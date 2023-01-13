@@ -17,11 +17,30 @@
     <label for="answer-selections">Choose an answer (1 for lowest & 6 for highest):</label>
 
     <ul id="list">
-      <li id="question-1">Question 1: How do you like reading?</li>
-      <li><a href="#">Question 2</a></li>
-      <li><a href="#">Question 3</a></li>
-      <li><a href="#">Question 4</a></li>
-      <li><a href="#">Question 5</a></li>
+      <li id="question-1-display">Question 1: How do you like reading?</li>
+      <select name="answer-dropdown" id="question-1">
+        <option value=" ">Please choose an option</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+
+      <li>Question 2</li>
+      <select name="answer-dropdown" id="question-2">
+            <option value=" ">Please choose an option</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+      <li>Question 3</li>
+      <li>Question 4</li>
+      <li>Question 5</li>
     </ul>
 
     <select name="answer-dropdown" id="answer-selections">
@@ -39,7 +58,7 @@
   <br>
   <div class="hidden">
     <div class="box">
-      <div><strong>Log:</strong></div>
+      <div><strong>Result:</strong></div>
       <div id="result" class="log"></div>
     </div>
   </div>

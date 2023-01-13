@@ -6,39 +6,43 @@
 -When the user submits the form again (for a second or third time) previous results are hidden, cleared, or replaced.
 */
 
-function questions(){
+// function questions(){
 
-  if (e){
-   // isolate list items through val
-   const liItem1 = list.innerHTML += `<li><a href="#">Item ${list.children.length + 1}</a></li>`;
-   console.log("li item/e", liItem, e);
-  }
-}
+//   if (){
+//    // isolate list items through val
+//    const liItem1 = list.innerHTML += `<li><a href="#">Item ${list.children.length + 1}</a></li>`;
+//    console.log("li item/e", liItem, e);
+//   }
+// }
 
 function errorMessage(){
-  return  "Enter #s/make selections."
- }
+  return "ERROR MSG: Enter #s/make selections."
+}
 
-const handleSuggestor = (event) => {
-  event.preventDefault();
-  
+const handleSuggestor = (e) => {
+  e.preventDefault();
+ // questions();
   // data capture
   const questionVal = document.getElementById("answer-selections").value;
-  console.log("question1Val: ", questionVal);
-  const list = document.getElementById("list");
-  console.log("my list: ", list);
+  console.log("questionVal: ", questionVal);
+  const questionValue1 = document.getElementById("question-1").value;
+  console.log("questionValue1: ", questionValue1);
+  const questionValue2 = document.getElementById("question-2").value;
+  console.log("questionValue2: ", questionValue2);
+  // const list = document.getElementById("list");
+  // console.log("my list: ", list);
 
-  //add ITEM to disply list item in order
-  // const liItem = list.innerHTML += `<li><a href="#">Item ${list.children.length + 1}</a></li>`;
-  const liItem = list.innerHTML += `<li><a href="#">Question for you ${list.children.length}</a></li>`;
-  console.log("li item", liItem);
+  // //add ITEM to disply list item in order
+  // // const liItem = list.innerHTML += `<li><a href="#">Item ${list.children.length + 1}</a></li>`;
+  // const liItem = list.innerHTML += `<li><a href="#">Question for you ${list.children.length}</a></li>`;
+  // console.log("li item", liItem);
 
   // error handling
   // const nums = "Display numbers: YES";
   // if ((Number.isInteger(question1) || Number.isInteger(question2)|| Number.isInteger(question3)|| Number.isInteger(question4)|| Number.isInteger(question5))){
   //   document.getElementById("result").innerText = nums;
   // } else 
-  if (questionVal === 0) {
+  if ((questionValue1 || questionValue2) ===  " ") {
     document.getElementById("result").innerText = errorMessage();
   }
 }
