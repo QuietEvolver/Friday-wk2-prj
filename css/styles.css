@@ -1,0 +1,79 @@
+h1 {
+  color:rgb(150, 244, 107);
+  font-style: italic;
+}
+ #output {
+  color:rgb(115, 197, 205); 
+  font-weight: bold;
+  font-size: x-large;
+  font-style: oblique;
+}
+
+html {
+  font-family: sans-serif;
+  color:rgb(222, 225, 214)
+}
+
+div:first-of-type {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+label {
+  margin-right: 15px;
+  line-height: 32px;
+}
+
+input#order-size, input#ordername {
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+input:checked {
+  border: 6px solid black;
+}
+
+img {
+  opacity: 0.5;
+}
+body {
+  background: url( "https://imgs.search.brave.com/es3dN23ivk40_1iVFHmPP4dAnA_utZ43OPCg_MqGsnQ/rs:fit:577:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC56/MHl2djVneHZUZXRO/M0ZOY2g0WkRBSGFH/RiZwaWQ9QXBp") no-repeat;
+  background-size: cover;
+}
+
+button,
+legend {
+  color: rgb(248, 246, 246);
+  background-color: rgb(98, 88, 88);
+  padding: 5px 10px;
+  border-radius: 0;
+  border: 0;
+  font-size: 14px;
+}
+
+button:hover,
+button:focus {
+  color: #999;
+}
+
+button:active {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
+
+#log {
+ color: rgb(197, 245, 96);
+ font-family: sans-serif;
+}
