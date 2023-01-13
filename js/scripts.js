@@ -1,9 +1,4 @@
 /*
--Form gathers input from the user.
--Branching is used to determine the result.
--Web API object properties or methods (not including window methods for alerting, prompting, or confirming) are used to display the result to the user.
--Event handler properties or event listeners are used to handle events.
--When the user submits the form again (for a second or third time) previous results are hidden, cleared, or replaced.
 */
 
 function questionsEvaluation(answer){
@@ -22,7 +17,6 @@ function questionsEvaluation(answer){
     //  document.getElementById("result").innerHTML = "Python";
     return "C#";
   }
-  
 }
 
 function errorMessage(){
@@ -33,11 +27,11 @@ const handleSuggestor = (e) => {
   e.preventDefault();
 
   // data capture
-  const questionValue1 = parseInt(document.getElementById("question-1").value);
-  const questionValue2 = parseInt(document.getElementById("question-2").value);
-  const questionValue3 = parseInt(document.getElementById("question-3").value);
-  const questionValue4 = parseInt(document.getElementById("question-4").value);
-  const questionValue5 = parseInt(document.getElementById("question-5").value);
+  let questionValue1 = parseInt(document.getElementById("question-1").value);
+  let questionValue2 = parseInt(document.getElementById("question-2").value);
+  let questionValue3 = parseInt(document.getElementById("question-3").value);
+  let questionValue4 = parseInt(document.getElementById("question-4").value);
+  let questionValue5 = parseInt(document.getElementById("question-5").value);
 
   const answer = questionValue1 + questionValue2 + questionValue3 + questionValue4 + questionValue5;
 
@@ -54,6 +48,17 @@ const handleSuggestor = (e) => {
   // } else if ((questionValue1 || questionValue2) ===  " ") {
   //   document.getElementById("result").innerText = errorMessage();
   // }
+  questionValue1 = document.getElementById("question-1").value = null;
+  questionValue2 = document.getElementById("question-2").value = null;
+  questionValue3 = document.getElementById("question-3").value = null;
+  questionValue4 = document.getElementById("question-4").value = null;
+  questionValue5 = document.getElementById("question-5").value = null;
+
+
+  
+//  output = setTimeout(() => {
+//     output.remove() 
+//   }, timeout);
 }
 
 window.addEventListener("load", () => {
