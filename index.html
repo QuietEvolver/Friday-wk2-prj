@@ -13,16 +13,25 @@
   <h2>Programming Language Suggestor</h2>
 
   <form id="form-id">
-    <label for="answer-selections">Choose an answer:</label>
+    <p id="question-1" >How do you like reading?</p>
+    <label for="answer-selections">Choose an answer (1 for lowest & 6 for highest):</label>
+
+    <ul id="list">
+      <li><a href="#">Question 1</a></li>
+      <li><a href="#">Question 2</a></li>
+      <li><a href="#">Question 3</a></li>
+      <li><a href="#">Question 4</a></li>
+      <li><a href="#">Question 5</a></li>
+    </ul>
 
     <select name="answer-dropdown" id="answer-selections">
       <option value=" ">Please choose an option</option>
-      <option value="dog">Dog</option>
-      <option value="cat">Cat</option>
-      <option value="hamster">Hamster</option>
-      <option value="parrot">Parrot</option>
-      <option value="spider">Spider</option>
-      <option value="goldfish">Goldfish</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
     </select>
 
     <button type="submit">Submit</button>

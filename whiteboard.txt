@@ -1,0 +1,20 @@
+wants: 
+.innerHTML()??
+to display a question
+hide/show said question - .remove (list item)
+display new question
+
+/to calc
+on each question, capture ind'l value from user input from html to js and add to current value
+
+// eval
+
+i - add up questions
+
+ii - if this questions (5ques 6pts ea = 30)
+===6 < =13 )- then python
+===14 <= 22
+===23 <=30
+
+
+/// 3 langs && 5 question
