@@ -17,6 +17,10 @@ function questionsEvaluation(answer){
     console.log("logging ElseIF 2nd tier");
     //  document.getElementById("result").innerHTML = "Python";
     return "Javascript";
+  } else if (answer >= 23 && answer <= 30){
+    console.log("logging ElseIF 2nd tier");
+    //  document.getElementById("result").innerHTML = "Python";
+    return "C#";
   }
   
 }
@@ -31,9 +35,11 @@ const handleSuggestor = (e) => {
   // data capture
   const questionValue1 = parseInt(document.getElementById("question-1").value);
   const questionValue2 = parseInt(document.getElementById("question-2").value);
-  const questionValue3 = parseInt(document.getElementById("question-2").value);
+  const questionValue3 = parseInt(document.getElementById("question-3").value);
+  const questionValue4 = parseInt(document.getElementById("question-4").value);
+  const questionValue5 = parseInt(document.getElementById("question-5").value);
 
-  const answer = questionValue1 + questionValue2 + questionValue3;
+  const answer = questionValue1 + questionValue2 + questionValue3 + questionValue4 + questionValue5;
 
   questionsEvaluation(answer);
 
