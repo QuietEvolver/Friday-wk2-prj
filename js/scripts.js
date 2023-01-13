@@ -6,14 +6,14 @@
 -When the user submits the form again (for a second or third time) previous results are hidden, cleared, or replaced.
 */
 
-// function questions(){
+function questionsEvaluation(answer){
 
-//   if (){
-//    // isolate list items through val
-//    const liItem1 = list.innerHTML += `<li><a href="#">Item ${list.children.length + 1}</a></li>`;
-//    console.log("li item/e", liItem, e);
-//   }
-// }
+  if (answer === 6 && answer <= 13){
+    document.getElementById("result").innerText = "Python";
+    console.log("logging first tier");
+  }
+  
+}
 
 function errorMessage(){
   return "ERROR MSG: Enter #s/make selections."
@@ -21,30 +21,25 @@ function errorMessage(){
 
 const handleSuggestor = (e) => {
   e.preventDefault();
- // questions();
+
   // data capture
-  const questionVal = document.getElementById("answer-selections").value;
-  console.log("questionVal: ", questionVal);
   const questionValue1 = document.getElementById("question-1").value;
   console.log("questionValue1: ", questionValue1);
   const questionValue2 = document.getElementById("question-2").value;
   console.log("questionValue2: ", questionValue2);
-  // const list = document.getElementById("list");
-  // console.log("my list: ", list);
 
-  // //add ITEM to disply list item in order
-  // // const liItem = list.innerHTML += `<li><a href="#">Item ${list.children.length + 1}</a></li>`;
-  // const liItem = list.innerHTML += `<li><a href="#">Question for you ${list.children.length}</a></li>`;
-  // console.log("li item", liItem);
+  const answer = questionValue1 + questionValue2;
 
-  // error handling
-  // const nums = "Display numbers: YES";
-  // if ((Number.isInteger(question1) || Number.isInteger(question2)|| Number.isInteger(question3)|| Number.isInteger(question4)|| Number.isInteger(question5))){
-  //   document.getElementById("result").innerText = nums;
-  // } else 
-  if ((questionValue1 || questionValue2) ===  " ") {
-    document.getElementById("result").innerText = errorMessage();
-  }
+  questionsEvaluation();
+  let output = questionsEvaluation(answer);
+  
+  document.getElementById("result").innerText = output;
+  //error handling//|| Number.isInteger(question3)|| Number.isInteger(question4)|| Number.isInteger(question5)
+  // if ((Number.isInteger(questionValue1) || Number.isInteger(questionValue2))){
+  //   document.getElementById("result").innerText = output;
+  // } else if ((questionValue1 || questionValue2) ===  " ") {
+  //   document.getElementById("result").innerText = errorMessage();
+  // }
 }
 
 window.addEventListener("load", () => {
