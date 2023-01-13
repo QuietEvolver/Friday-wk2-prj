@@ -27,10 +27,10 @@ const handleSuggestor = (e) => {
 
   questionsEvaluation(answer);
 
-  let output = "Your total score: " + answer + 
+  let display = "Your total score: " + answer + 
   ".  " +  questionsEvaluation(answer) + " is your suggested programming language.";
 
-  // document.getElementById("result").innerText = output;
+ document.getElementById("result").innerText = display;
 
   //error handling// NaN registers as integer.
   // if ((Number.isInteger(questionValue1) || Number.isInteger(questionValue2) || Number.isInteger(questionValue3) || Number.isInteger(questionValue4) || Number.isInteger(questionValue5))){
@@ -45,12 +45,15 @@ const handleSuggestor = (e) => {
   questionValue4 = document.getElementById("question-4").value = null;
   questionValue5 = document.getElementById("question-5").value = null;
 
-  output = setTimeout(() => {
+  //  let setTimeoutInterval = 
+// let outputDiv = document
+  setTimeout((output) => {
     // output.remove(); 
     console.log("Set TIME OUT");
-   // document.querySelector("div#story").removeAttribute("class");
-    document.getElementById("result");
+    document.querySelector("div#output").setAttribute("class", "hidden");
+    // result.addEventListener("submit", );
   }, 2000);
+  // setTimeoutInterval(output);
 }
 
 window.addEventListener("load", () => {
