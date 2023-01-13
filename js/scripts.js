@@ -13,6 +13,10 @@ function questionsEvaluation(answer){
     console.log("logging IF first tier");
     //  document.getElementById("result").innerHTML = "Python";
     return "Python";
+  } else if (answer >= 14 && answer <= 22){
+    console.log("logging ElseIF 2nd tier");
+    //  document.getElementById("result").innerHTML = "Python";
+    return "Javascript";
   }
   
 }
@@ -26,16 +30,13 @@ const handleSuggestor = (e) => {
 
   // data capture
   const questionValue1 = parseInt(document.getElementById("question-1").value);
-  console.log("questionValue1: ", questionValue1);
   const questionValue2 = parseInt(document.getElementById("question-2").value);
-  console.log("questionValue2: ", questionValue2);
+  const questionValue3 = parseInt(document.getElementById("question-2").value);
 
-  const answer = questionValue1 + questionValue2;
-  console.log("answer", answer);
-  questionsEvaluation( questionValue1 + questionValue2 ,answer);
-  console.log("eval(): ", questionsEvaluation(answer))
-  
-  
+  const answer = questionValue1 + questionValue2 + questionValue3;
+
+  questionsEvaluation(answer);
+
   let output = "Your total score: " + answer + 
   ".  " +  questionsEvaluation(answer) + " is your suggested programming language.";
 
