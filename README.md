@@ -2,7 +2,7 @@
 
 #### By _**Vera Weikel**_
 
-* _Here is the [deployed site:](https://quietevolver.github.io/programming-language-suggestor-23-.git/)_
+* _Here is the [deployed site:](https://quietevolver.github.io/programming-language-suggestor-23.git/)_
 
 ## Technologies Used
 
@@ -18,7 +18,7 @@ Create an application for people interested in coding to decide which language t
 
 * _Open a terminal console on your personal computer_
 * _Navigate to your Desktop_
-* _Type $ git clone the [repo](https://github.com/QuietEvolver/programming-language-suggestor-23-.git)_
+* _Type $ git clone the [repo](https://github.com/QuietEvolver/programming-language-suggestor-23.git)_
 * _Navigate into the repo once cloned_
 * _Once in the repository folder, open index.html in browser of choice._
 
