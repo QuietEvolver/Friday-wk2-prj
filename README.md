@@ -1,26 +1,24 @@
-# Programming Portflio
+# Programming Language Suggester
 
 #### By _**Vera Weikel**_
 
-* _Here is the [deployed site:](https://quietevolver.github.io/Friday-wk2-prj/)_
+* _Here is the [deployed site:](https://quietevolver.github.io/programming-language-suggestor-23-.git/)_
 
 ## Technologies Used
 
-* _GitHub_
-* _VS Code_
+* _Javascript_
 * _HTML_
 * _CSS_
-* _Bootstrap_
 
 ## Description
 
-Personal Portfolio Page
+Create an application for people interested in coding to decide which language they should learn first. 
 
 ## Setup/Installation Requirements
 
 * _Open a terminal console on your personal computer_
 * _Navigate to your Desktop_
-* _Type $ git clone the [repo](https://github.com/QuietEvolver/Friday-wk2-prj.git)_
+* _Type $ git clone the [repo](https://github.com/QuietEvolver/programming-language-suggestor-23-.git)_
 * _Navigate into the repo once cloned_
 * _Once in the repository folder, open index.html in browser of choice._
 
