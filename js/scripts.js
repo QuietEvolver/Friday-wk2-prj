@@ -11,7 +11,7 @@ function questionsEvaluation(answer){
   console.log("logging first tier");
   if (answer === 6 && answer <= 13){
     console.log("logging IF first tier");
-    return document.getElementById("result").innerText = "Python";
+    document.getElementById("result").innerText = "Python";
   }
   
 }
@@ -31,7 +31,7 @@ const handleSuggestor = (e) => {
 
   const answer = questionValue1 + questionValue2;
   console.log("answer", answer);
-  questionsEvaluation(answer);
+  questionsEvaluation( questionValue1 + questionValue2 ,answer);
   console.log("eval(): ", questionsEvaluation(answer))
   
   
