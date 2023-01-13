@@ -1,13 +1,17 @@
-.hidden{
+.hidden {
   display: none;
 }
 
 h1 {
-  color:rgb(150, 244, 107);
+  color: rgb(150, 244, 107);
   font-style: italic;
 }
- #output {
-  color:rgb(115, 197, 205); 
+
+h2{
+  color: rgb(96, 92, 100);
+}
+#output {
+  color: rgb(115, 197, 205);
   font-weight: bold;
   font-size: x-large;
   font-style: oblique;
@@ -15,7 +19,7 @@ h1 {
 
 html {
   font-family: sans-serif;
-  color:rgb(222, 225, 214)
+  color: rgb(74, 96, 14)
 }
 
 div:first-of-type {
@@ -29,17 +33,15 @@ label {
   line-height: 32px;
 }
 
-input#order-size, input#ordername {
+input#order-size,
+input#ordername {
   appearance: none;
-
   border-radius: 50%;
   width: 16px;
   height: 16px;
-
-  border: 2px solid #999;
+  border: 2px solid rgb(60, 58, 58);
   transition: 0.2s all linear;
   margin-right: 5px;
-
   position: relative;
   top: 4px;
 }
@@ -51,8 +53,9 @@ input:checked {
 img {
   opacity: 0.5;
 }
+
 body {
-  background: url( "https://imgs.search.brave.com/es3dN23ivk40_1iVFHmPP4dAnA_utZ43OPCg_MqGsnQ/rs:fit:577:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC56/MHl2djVneHZUZXRO/M0ZOY2g0WkRBSGFH/RiZwaWQ9QXBp") no-repeat;
+  background: url("https://imgs.search.brave.com/es3dN23ivk40_1iVFHmPP4dAnA_utZ43OPCg_MqGsnQ/rs:fit:577:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC56/MHl2djVneHZUZXRO/M0ZOY2g0WkRBSGFH/RiZwaWQ9QXBp") no-repeat;
   background-size: cover;
 }
 
@@ -75,9 +78,4 @@ button:active {
   background-color: white;
   color: black;
   outline: 1px solid black;
-}
-
-#log {
- color: rgb(197, 245, 96);
- font-family: sans-serif;
 }

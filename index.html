@@ -12,7 +12,23 @@
 <body>
   <h2>Programming Language Suggestor</h2>
 
+  <form id="form-id">
+    <label for="answer-selections">Choose an answer:</label>
 
+    <select name="answer-dropdown" id="answer-selections">
+      <option value=" ">Please choose an option</option>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="hamster">Hamster</option>
+      <option value="parrot">Parrot</option>
+      <option value="spider">Spider</option>
+      <option value="goldfish">Goldfish</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="result" class="hidden"></div>
 
 </body>
 </html>
