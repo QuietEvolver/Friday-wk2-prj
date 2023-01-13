@@ -2,7 +2,7 @@
 
 #### By _**Vera Weikel**_
 
-* _Here is the [deployed site:](https://quietevolver.github.io/Friday-prj-de/)_
+* _Here is the [deployed site:](https://quietevolver.github.io/Friday-wk2-prj/)_
 
 ## Technologies Used
 
@@ -20,7 +20,7 @@ Personal Portfolio Page
 
 * _Open a terminal console on your personal computer_
 * _Navigate to your Desktop_
-* _Type $ git clone the [repo](https://github.com/QuietEvolver/Friday-prj-de.git)_
+* _Type $ git clone the [repo](https://github.com/QuietEvolver/Friday-wk2-prj.git)_
 * _Navigate into the repo once cloned_
 * _Once in the repository folder, open index.html in browser of choice._
 
