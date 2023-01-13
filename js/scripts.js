@@ -32,7 +32,7 @@ const handleSuggestor = (e) => {
 
  document.getElementById("result").innerText = display;
 
-  //error handling// NaN registers as integer.
+  //error handling NaN registers as integer.
   // if ((Number.isInteger(questionValue1) || Number.isInteger(questionValue2) || Number.isInteger(questionValue3) || Number.isInteger(questionValue4) || Number.isInteger(questionValue5))){
   //   document.getElementById("result").innerText = output;
   // } else if (((questionValue1 || questionValue2) || (questionValue3 || questionValue4 || questionValue5)) === NaN) {
@@ -47,12 +47,13 @@ const handleSuggestor = (e) => {
 
   //  let setTimeoutInterval = 
 // let outputDiv = document
-  setTimeout((output) => {
-    // output.remove(); 
-    console.log("Set TIME OUT");
-    document.querySelector("div#output").setAttribute("class", "hidden");
-    // result.addEventListener("submit", );
-  }, 2000);
+  setTimeout((display) => {
+    console.log("Set TIME OUT", display);
+  //  let output =  document.querySelector("div#output").setAttribute("class", "hidden");
+  //   // result.addEventListener("submit", );
+  //   output.remove(display); 
+  document.getElementById("result").innerText = null;
+  }, 8000);
   // setTimeoutInterval(output);
 }
 
