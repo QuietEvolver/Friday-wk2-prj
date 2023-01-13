@@ -8,9 +8,10 @@
 
 function questionsEvaluation(answer){
 
+  console.log("logging first tier");
   if (answer === 6 && answer <= 13){
-    document.getElementById("result").innerText = "Python";
-    console.log("logging first tier");
+    console.log("logging IF first tier");
+    return document.getElementById("result").innerText = "Python";
   }
   
 }
@@ -23,17 +24,19 @@ const handleSuggestor = (e) => {
   e.preventDefault();
 
   // data capture
-  const questionValue1 = document.getElementById("question-1").value;
+  const questionValue1 = parseInt(document.getElementById("question-1").value);
   console.log("questionValue1: ", questionValue1);
-  const questionValue2 = document.getElementById("question-2").value;
+  const questionValue2 = parseInt(document.getElementById("question-2").value);
   console.log("questionValue2: ", questionValue2);
 
   const answer = questionValue1 + questionValue2;
-
-  questionsEvaluation();
-  let output = questionsEvaluation(answer);
-  
+  console.log("answer", answer);
+  questionsEvaluation(answer);
+  console.log("eval(): ", questionsEvaluation(answer))
+  let output = answer;
   document.getElementById("result").innerText = output;
+
+
   //error handling//|| Number.isInteger(question3)|| Number.isInteger(question4)|| Number.isInteger(question5)
   // if ((Number.isInteger(questionValue1) || Number.isInteger(questionValue2))){
   //   document.getElementById("result").innerText = output;
