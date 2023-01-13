@@ -9,9 +9,10 @@
 function questionsEvaluation(answer){
 
   console.log("logging first tier");
-  if (answer === 6 && answer <= 13){
+  if (answer >= 6 && answer <= 13){
     console.log("logging IF first tier");
-    document.getElementById("result").innerText = "Python";
+    //  document.getElementById("result").innerHTML = "Python";
+    return "Python";
   }
   
 }
@@ -35,10 +36,10 @@ const handleSuggestor = (e) => {
   console.log("eval(): ", questionsEvaluation(answer))
   
   
-  let output = "Your total score: " + answer;
+  let output = "Your total score: " + answer + 
+  ".  " +  questionsEvaluation(answer) + " is your suggested programming language.";
 
   document.getElementById("result").innerText = output;
-
 
   //error handling//|| Number.isInteger(question3)|| Number.isInteger(question4)|| Number.isInteger(question5)
   // if ((Number.isInteger(questionValue1) || Number.isInteger(questionValue2))){
