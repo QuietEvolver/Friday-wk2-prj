@@ -33,7 +33,10 @@ const handleSuggestor = (e) => {
   console.log("answer", answer);
   questionsEvaluation(answer);
   console.log("eval(): ", questionsEvaluation(answer))
-  let output = answer;
+  
+  
+  let output = "Your total score: " + answer;
+
   document.getElementById("result").innerText = output;
 
 
