@@ -28,13 +28,10 @@ const handleSuggestor = (e) => {
 
   let display = "Your total score: " + answer + 
   ".  " +  questionsEvaluation(answer) + " is your suggested programming language.";
-
   // document.getElementById("result").innerText = display;
 
-  //error handling NaN registers as integer.
-  if ((Number.isInteger(questionValue1) || Number.isInteger(questionValue2) || Number.isInteger(questionValue3) || Number.isInteger(questionValue4) || Number.isInteger(questionValue5))){
-  //  Number.isNaN(questionValue1)
- // if (( questionValue1 || questionValue2 || questionValue3 || questionValue4 || questionValue5) >= 5) {
+  //error handling 
+  if ((Number.isInteger(questionValue1) && Number.isInteger(questionValue2) && Number.isInteger(questionValue3) && Number.isInteger(questionValue4) && Number.isInteger(questionValue5))){
     document.getElementById("result").innerText = display;
   } else { 
     document.getElementById("result").style.backgroundColor = "red";
