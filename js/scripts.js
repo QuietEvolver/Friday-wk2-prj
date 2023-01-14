@@ -33,10 +33,12 @@ const handleSuggestor = (e) => {
 
   //error handling NaN registers as integer.
   // if ((Number.isInteger(questionValue1) || Number.isInteger(questionValue2) || Number.isInteger(questionValue3) || Number.isInteger(questionValue4) || Number.isInteger(questionValue5))){
-  //   document.getElementById("result").innerText = output;
-  // } else 
-  if ((questionValue1 || questionValue2 || questionValue3 || questionValue4 || questionValue5) === NaN) {
+  //  
+  if (!(questionValue1 || questionValue2 || questionValue3 || questionValue4 || questionValue5) === NaN) {
+    document.getElementById("result").innerText = output;
+  } else { 
     document.getElementById("result").innerText = errorMessage();
+    console.log("error if nan");
   }
 
   questionValue1 = document.getElementById("question-1").value = null;
@@ -48,7 +50,7 @@ const handleSuggestor = (e) => {
   // clear previous answers display
   setTimeout(() => {
     document.getElementById("result").innerText = null;
-  }, 5000);
+  }, 3500);
 }
 
 window.addEventListener("load", () => {
