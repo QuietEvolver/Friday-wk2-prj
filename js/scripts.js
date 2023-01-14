@@ -1,21 +1,20 @@
 function questionsEvaluation(answer){
-  if (answer >= 6 && answer <= 13){
+  if (answer >= 5 && answer <= 12){
     return "Python";
-  } else if (answer >= 14 && answer <= 22){
+  } else if (answer >= 13 && answer <= 22){
     return "Javascript";
   } else if (answer >= 23 && answer <= 30){
     return "C#";
   }
 }
 
-// function errorMessage(){
-//   return "ERROR MSG: Enter #s/make selections."
-// }
+function errorMessage(){
+  return "ERROR MSG: Enter #s/make selections."
+}
 
 const handleSuggestor = (e) => {
   e.preventDefault();
 
-  // document.querySelector("div.hidden").
   // data capture
   let questionValue1 = parseInt(document.getElementById("question-1").value);
   let questionValue2 = parseInt(document.getElementById("question-2").value);
@@ -35,9 +34,10 @@ const handleSuggestor = (e) => {
   //error handling NaN registers as integer.
   // if ((Number.isInteger(questionValue1) || Number.isInteger(questionValue2) || Number.isInteger(questionValue3) || Number.isInteger(questionValue4) || Number.isInteger(questionValue5))){
   //   document.getElementById("result").innerText = output;
-  // } else if (((questionValue1 || questionValue2) || (questionValue3 || questionValue4 || questionValue5)) === NaN) {
-  //   document.getElementById("result").innerText = errorMessage();
-  // }
+  // } else 
+  if ((questionValue1 || questionValue2 || questionValue3 || questionValue4 || questionValue5) === NaN) {
+    document.getElementById("result").innerText = errorMessage();
+  }
 
   questionValue1 = document.getElementById("question-1").value = null;
   questionValue2 = document.getElementById("question-2").value = null;
@@ -45,20 +45,14 @@ const handleSuggestor = (e) => {
   questionValue4 = document.getElementById("question-4").value = null;
   questionValue5 = document.getElementById("question-5").value = null;
 
-  //  let setTimeoutInterval = 
-// let outputDiv = document
-  setTimeout((display) => {
-    console.log("Set TIME OUT", display);
-  //  let output =  document.querySelector("div#output").setAttribute("class", "hidden");
-  //   // result.addEventListener("submit", );
-  //   output.remove(display); 
-  document.getElementById("result").innerText = null;
-  }, 8000);
-  // setTimeoutInterval(output);
+  // clear previous answers display
+  setTimeout(() => {
+    document.getElementById("result").innerText = null;
+  }, 5000);
 }
 
 window.addEventListener("load", () => {
+  console.log("Interval run");
   const form = document.getElementById("form-id");
   form.addEventListener("submit", handleSuggestor);
-  // let reset = docreset.removeAttribute("class");
 });
